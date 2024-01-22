@@ -1,0 +1,26 @@
+{
+    "events": [
+        {
+            "id": 2,
+            "date_start": "1706785200",
+            "date_finish": "1706788800",
+            "name": "Second task",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+            "id": 1,
+            "date_start": "147600000",
+            "date_finish": "147610000",
+            "name": "My task",
+            "description": "Описание моего дела"
+        },
+        {
+            "id": 3,
+            "date_start": "1706130000",
+            "date_finish": "1706140800",
+            "name": "Third task",
+            "description": ""
+        }
+    ]
+}
+
