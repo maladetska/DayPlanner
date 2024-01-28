@@ -1,10 +1,3 @@
-//
-//  DayPlannerUITestsLaunchTests.swift
-//  DayPlannerUITests
-//
-//  Created by Мария on 17.01.2024.
-//
-
 import XCTest
 
 final class DayPlannerUITestsLaunchTests: XCTestCase {

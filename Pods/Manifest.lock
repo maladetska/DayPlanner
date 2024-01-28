@@ -1,0 +1,34 @@
+PODS:
+  - CalendarKit (1.1.9)
+  - Realm (10.45.3):
+    - Realm/Headers (= 10.45.3)
+  - Realm/Headers (10.45.3)
+  - RealmSwift (10.45.3):
+    - Realm (= 10.45.3)
+  - SwiftLint (0.54.0)
+  - SwiftyJSON (5.0.1)
+
+DEPENDENCIES:
+  - CalendarKit
+  - RealmSwift
+  - SwiftLint
+  - SwiftyJSON
+
+SPEC REPOS:
+  trunk:
+    - CalendarKit
+    - Realm
+    - RealmSwift
+    - SwiftLint
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  CalendarKit: 0c19eabfc09a6d2b32d2e7fe392e2fe5996622af
+  Realm: b277b843c7505c1e30e3a70322a24a09283e62bb
+  RealmSwift: f6690053e81733801e6619eb5b39993ab76f7050
+  SwiftLint: c1de071d9d08c8aba837545f6254315bc900e211
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+
+PODFILE CHECKSUM: 9253c6808eaf47d84135255521dc27fffeb39f17
+
+COCOAPODS: 1.14.3

@@ -1,55 +1,54 @@
 import CalendarKit
 
-final class EventVVV: EventDescriptor {
+final class EventWindow: EventDescriptor {
+    var id: Int
+    var text: String
+    var details: String
     var dateInterval = DateInterval()
+
     var isAllDay = false
-    var text = ""
     var attributedText: NSAttributedString?
     var lineBreakMode: NSLineBreakMode?
-    var font = UIFont.boldSystemFont(ofSize: 12)
-    var color: UIColor
-    var textColor = SystemColors.label
-    var backgroundColor = SystemColors.systemBlue.withAlphaComponent(0.3)
+    var font: UIFont = .boldSystemFont(ofSize: 12)
+    var color: UIColor = .white
+    var textColor: UIColor = SystemColors.label
+    var backgroundColor: UIColor = SystemColors.systemBlue.withAlphaComponent(1 / 5)
     var editedEvent: CalendarKit.EventDescriptor?
-    var description = ""
-    var id: Int = 0
 
     init(
         id: Int,
-        text: String,
         dateInterval: DateInterval,
-        description: String,
-        color: UIColor = .white
+        text: String,
+        details: String
     ) {
+        self.id = id
         self.dateInterval = dateInterval
         self.text = text
-        self.description = description
-        self.id = id
-        self.color = color
+        self.details = details
     }
 
     init(_ event: Event) {
-        self.text = event.name
-        self.description = event.description
         self.id = event.id
-        self.color = .white
         self.dateInterval = DateInterval(
             start: Date(timeIntervalSince1970: event.dateStart),
             end: Date(timeIntervalSince1970: event.dateFinish)
         )
+        self.text = event.name
+        self.details = event.details
     }
 
-    func makeEditable() -> EventVVV {
-        return EventVVV(
+    func makeEditable() -> EventWindow {
+        return EventWindow(
             id: id,
-            text: text,
             dateInterval: dateInterval,
-            description: description
+            text: text,
+            details: details
         )
     }
 
     func commitEditing() {
-        guard let edited = editedEvent else { return }
-        edited.dateInterval = dateInterval
+        if let edited = editedEvent {
+            edited.dateInterval = dateInterval
+        }
     }
 }

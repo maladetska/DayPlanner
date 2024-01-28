@@ -1,10 +1,10 @@
 import Foundation
 
-protocol JsonParserProtocol: AnyObject {
+protocol JsonParserProtocol {
     static func parseJsonStringToData(jsonString: String) -> Data?
 }
 
-enum JsonParser {
+enum JsonParser: JsonParserProtocol {
     static func parseJsonStringToData(jsonString: String) -> Data? {
         return jsonString.data(using: .utf8)
     }

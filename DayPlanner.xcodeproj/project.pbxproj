@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		463FCC6B2B59A7E300017412 /* RealmStorageClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463FCC6A2B59A7E300017412 /* RealmStorageClient.swift */; };
+		463FCC6D2B59A7F600017412 /* Deserializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463FCC6C2B59A7F600017412 /* Deserializer.swift */; };
+		463FCC712B59A86400017412 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463FCC702B59A86400017412 /* JsonParser.swift */; };
+		463FCC772B59BFEC00017412 /* FileClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463FCC762B59BFEC00017412 /* FileClient.swift */; };
+		463FCC792B59CE3A00017412 /* DataInitializatior.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463FCC782B59CE3A00017412 /* DataInitializatior.swift */; };
+		463FCC7C2B59E13400017412 /* DataBaseClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 463FCC7B2B59E13400017412 /* DataBaseClient.swift */; };
 		4668A00C2B5863B500ACE3D7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4668A00B2B5863B500ACE3D7 /* AppDelegate.swift */; };
 		4668A00E2B5863B500ACE3D7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4668A00D2B5863B500ACE3D7 /* SceneDelegate.swift */; };
-		4668A0102B5863B500ACE3D7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4668A00F2B5863B500ACE3D7 /* ViewController.swift */; };
+		4668A0102B5863B500ACE3D7 /* DayPlannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4668A00F2B5863B500ACE3D7 /* DayPlannerViewController.swift */; };
 		4668A0132B5863B500ACE3D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4668A0112B5863B500ACE3D7 /* Main.storyboard */; };
 		4668A0152B5863B600ACE3D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4668A0142B5863B600ACE3D7 /* Assets.xcassets */; };
 		4668A0182B5863B600ACE3D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4668A0162B5863B600ACE3D7 /* LaunchScreen.storyboard */; };
 		4668A0232B5863B600ACE3D7 /* DayPlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4668A0222B5863B600ACE3D7 /* DayPlannerTests.swift */; };
 		4668A02D2B5863B600ACE3D7 /* DayPlannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4668A02C2B5863B600ACE3D7 /* DayPlannerUITests.swift */; };
 		4668A02F2B5863B600ACE3D7 /* DayPlannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4668A02E2B5863B600ACE3D7 /* DayPlannerUITestsLaunchTests.swift */; };
+		4668A07D2B5896D300ACE3D7 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4668A07C2B5896D300ACE3D7 /* Event.swift */; };
+		4671E3A72B5DAF8E001C02FE /* EventWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4671E3A62B5DAF8E001C02FE /* EventWindow.swift */; };
+		4671E3AA2B5DBA94001C02FE /* RealmExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4671E3A92B5DBA94001C02FE /* RealmExtension.swift */; };
+		4671E3AC2B5DE5CB001C02FE /* Customs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4671E3AB2B5DE5CB001C02FE /* Customs.swift */; };
+		4671E3AE2B5E042C001C02FE /* EntryEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4671E3AD2B5E042C001C02FE /* EntryEventViewController.swift */; };
+		4FBA007BB283DAE9C94AB4C6 /* Pods_DayPlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C64C292F3A8F395FEA39EA7 /* Pods_DayPlanner.framework */; };
+		AA82707ED05F0E98E006CB0A /* Pods_DayPlannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93358B69DBB73FE0936CEC65 /* Pods_DayPlannerTests.framework */; };
+		FCAE6EFC82445401A884E571 /* Pods_DayPlannerUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D7E3BE9727AFF5994E23C3F /* Pods_DayPlannerUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +50,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F36B3C41A4BF85E6B9F2040 /* Pods-DayPlannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayPlannerTests.debug.xcconfig"; path = "Target Support Files/Pods-DayPlannerTests/Pods-DayPlannerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		463FCC6A2B59A7E300017412 /* RealmStorageClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmStorageClient.swift; sourceTree = "<group>"; };
+		463FCC6C2B59A7F600017412 /* Deserializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deserializer.swift; sourceTree = "<group>"; };
+		463FCC702B59A86400017412 /* JsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
+		463FCC762B59BFEC00017412 /* FileClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileClient.swift; sourceTree = "<group>"; };
+		463FCC782B59CE3A00017412 /* DataInitializatior.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInitializatior.swift; sourceTree = "<group>"; };
+		463FCC7B2B59E13400017412 /* DataBaseClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataBaseClient.swift; sourceTree = "<group>"; };
 		4668A0082B5863B500ACE3D7 /* DayPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DayPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4668A00B2B5863B500ACE3D7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4668A00D2B5863B500ACE3D7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4668A00F2B5863B500ACE3D7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4668A00F2B5863B500ACE3D7 /* DayPlannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPlannerViewController.swift; sourceTree = "<group>"; };
 		4668A0122B5863B500ACE3D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4668A0142B5863B600ACE3D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4668A0172B5863B600ACE3D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +70,19 @@
 		4668A0282B5863B600ACE3D7 /* DayPlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DayPlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4668A02C2B5863B600ACE3D7 /* DayPlannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPlannerUITests.swift; sourceTree = "<group>"; };
 		4668A02E2B5863B600ACE3D7 /* DayPlannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayPlannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4668A07C2B5896D300ACE3D7 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		4671E3A62B5DAF8E001C02FE /* EventWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventWindow.swift; sourceTree = "<group>"; };
+		4671E3A92B5DBA94001C02FE /* RealmExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmExtension.swift; sourceTree = "<group>"; };
+		4671E3AB2B5DE5CB001C02FE /* Customs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customs.swift; sourceTree = "<group>"; };
+		4671E3AD2B5E042C001C02FE /* EntryEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryEventViewController.swift; sourceTree = "<group>"; };
+		50C53905A5C79094522241BE /* Pods-DayPlannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayPlannerTests.release.xcconfig"; path = "Target Support Files/Pods-DayPlannerTests/Pods-DayPlannerTests.release.xcconfig"; sourceTree = "<group>"; };
+		5D7E3BE9727AFF5994E23C3F /* Pods_DayPlannerUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DayPlannerUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5DA56F9E38D3C3EFEC3DF5CF /* Pods-DayPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayPlanner.release.xcconfig"; path = "Target Support Files/Pods-DayPlanner/Pods-DayPlanner.release.xcconfig"; sourceTree = "<group>"; };
+		6A6F751575A534F4740AAC5B /* Pods-DayPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayPlanner.debug.xcconfig"; path = "Target Support Files/Pods-DayPlanner/Pods-DayPlanner.debug.xcconfig"; sourceTree = "<group>"; };
+		6FC2676B37E2897CDB2BC274 /* Pods-DayPlannerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayPlannerUITests.debug.xcconfig"; path = "Target Support Files/Pods-DayPlannerUITests/Pods-DayPlannerUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		714DBC41D864B9BAB487F98B /* Pods-DayPlannerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DayPlannerUITests.release.xcconfig"; path = "Target Support Files/Pods-DayPlannerUITests/Pods-DayPlannerUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8C64C292F3A8F395FEA39EA7 /* Pods_DayPlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DayPlanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93358B69DBB73FE0936CEC65 /* Pods_DayPlannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DayPlannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4FBA007BB283DAE9C94AB4C6 /* Pods_DayPlanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA82707ED05F0E98E006CB0A /* Pods_DayPlannerTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +106,64 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCAE6EFC82445401A884E571 /* Pods_DayPlannerUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		463FCC652B599CDD00017412 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				4668A00F2B5863B500ACE3D7 /* DayPlannerViewController.swift */,
+				4671E3AD2B5E042C001C02FE /* EntryEventViewController.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		463FCC662B599D2D00017412 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				463FCC782B59CE3A00017412 /* DataInitializatior.swift */,
+				463FCC7B2B59E13400017412 /* DataBaseClient.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		463FCC672B599E9300017412 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				4671E3A82B5DBA7F001C02FE /* Extensions */,
+				463FCC6A2B59A7E300017412 /* RealmStorageClient.swift */,
+				463FCC6C2B59A7F600017412 /* Deserializer.swift */,
+				463FCC702B59A86400017412 /* JsonParser.swift */,
+				463FCC762B59BFEC00017412 /* FileClient.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		463FCC7A2B59D9C600017412 /* Layers */ = {
+			isa = PBXGroup;
+			children = (
+				4668A0792B588BF300ACE3D7 /* Model */,
+				463FCC672B599E9300017412 /* Core */,
+				463FCC662B599D2D00017412 /* Service */,
+				463FCC652B599CDD00017412 /* Presentation */,
+			);
+			path = Layers;
+			sourceTree = "<group>";
+		};
 		46689FFF2B5863B500ACE3D7 = {
 			isa = PBXGroup;
 			children = (
+				4671E3AF2B5ED40B001C02FE /* Screenshots */,
 				4668A00A2B5863B500ACE3D7 /* DayPlanner */,
 				4668A0212B5863B600ACE3D7 /* DayPlannerTests */,
 				4668A02B2B5863B600ACE3D7 /* DayPlannerUITests */,
 				4668A0092B5863B500ACE3D7 /* Products */,
+				8A86AD15355EF6320BB2B5D3 /* Pods */,
+				E50C809DBC889F918B62EC36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +180,10 @@
 		4668A00A2B5863B500ACE3D7 /* DayPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				4671E3AB2B5DE5CB001C02FE /* Customs.swift */,
+				463FCC7A2B59D9C600017412 /* Layers */,
 				4668A00B2B5863B500ACE3D7 /* AppDelegate.swift */,
 				4668A00D2B5863B500ACE3D7 /* SceneDelegate.swift */,
-				4668A00F2B5863B500ACE3D7 /* ViewController.swift */,
 				4668A0112B5863B500ACE3D7 /* Main.storyboard */,
 				4668A0142B5863B600ACE3D7 /* Assets.xcassets */,
 				4668A0162B5863B600ACE3D7 /* LaunchScreen.storyboard */,
@@ -127,6 +209,53 @@
 			path = DayPlannerUITests;
 			sourceTree = "<group>";
 		};
+		4668A0792B588BF300ACE3D7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4668A07C2B5896D300ACE3D7 /* Event.swift */,
+				4671E3A62B5DAF8E001C02FE /* EventWindow.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4671E3A82B5DBA7F001C02FE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4671E3A92B5DBA94001C02FE /* RealmExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4671E3AF2B5ED40B001C02FE /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
+		8A86AD15355EF6320BB2B5D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A6F751575A534F4740AAC5B /* Pods-DayPlanner.debug.xcconfig */,
+				5DA56F9E38D3C3EFEC3DF5CF /* Pods-DayPlanner.release.xcconfig */,
+				3F36B3C41A4BF85E6B9F2040 /* Pods-DayPlannerTests.debug.xcconfig */,
+				50C53905A5C79094522241BE /* Pods-DayPlannerTests.release.xcconfig */,
+				6FC2676B37E2897CDB2BC274 /* Pods-DayPlannerUITests.debug.xcconfig */,
+				714DBC41D864B9BAB487F98B /* Pods-DayPlannerUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E50C809DBC889F918B62EC36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8C64C292F3A8F395FEA39EA7 /* Pods_DayPlanner.framework */,
+				93358B69DBB73FE0936CEC65 /* Pods_DayPlannerTests.framework */,
+				5D7E3BE9727AFF5994E23C3F /* Pods_DayPlannerUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +263,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4668A0322B5863B600ACE3D7 /* Build configuration list for PBXNativeTarget "DayPlanner" */;
 			buildPhases = (
+				1D77EE550FBA0DEB71DCCDA7 /* [CP] Check Pods Manifest.lock */,
+				4668A07F2B58A21700ACE3D7 /* Run Script */,
 				4668A0042B5863B500ACE3D7 /* Sources */,
 				4668A0052B5863B500ACE3D7 /* Frameworks */,
 				4668A0062B5863B500ACE3D7 /* Resources */,
+				22D7A1A09734FC96FD5E32C8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +283,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4668A0352B5863B600ACE3D7 /* Build configuration list for PBXNativeTarget "DayPlannerTests" */;
 			buildPhases = (
+				9F1B673F367139A82A339B45 /* [CP] Check Pods Manifest.lock */,
 				4668A01A2B5863B600ACE3D7 /* Sources */,
 				4668A01B2B5863B600ACE3D7 /* Frameworks */,
 				4668A01C2B5863B600ACE3D7 /* Resources */,
@@ -169,6 +302,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4668A0382B5863B600ACE3D7 /* Build configuration list for PBXNativeTarget "DayPlannerUITests" */;
 			buildPhases = (
+				A03EA573A29C9D0EDFB85ABF /* [CP] Check Pods Manifest.lock */,
 				4668A0242B5863B600ACE3D7 /* Sources */,
 				4668A0252B5863B600ACE3D7 /* Frameworks */,
 				4668A0262B5863B600ACE3D7 /* Resources */,
@@ -253,13 +387,129 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1D77EE550FBA0DEB71DCCDA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DayPlanner-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		22D7A1A09734FC96FD5E32C8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DayPlanner/Pods-DayPlanner-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-DayPlanner/Pods-DayPlanner-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-DayPlanner/Pods-DayPlanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4668A07F2B58A21700ACE3D7 /* Run Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which \"${PODS_ROOT}/SwiftLint/swiftlint\" >/dev/null; then\n    ${PODS_ROOT}/SwiftLint/swiftlint --fix && ${PODS_ROOT}/SwiftLint/swiftlint --config .swiftlint.yml \nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		9F1B673F367139A82A339B45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DayPlannerTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A03EA573A29C9D0EDFB85ABF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DayPlannerUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4668A0042B5863B500ACE3D7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4668A0102B5863B500ACE3D7 /* ViewController.swift in Sources */,
+				4668A0102B5863B500ACE3D7 /* DayPlannerViewController.swift in Sources */,
+				463FCC712B59A86400017412 /* JsonParser.swift in Sources */,
+				463FCC772B59BFEC00017412 /* FileClient.swift in Sources */,
+				463FCC7C2B59E13400017412 /* DataBaseClient.swift in Sources */,
 				4668A00C2B5863B500ACE3D7 /* AppDelegate.swift in Sources */,
+				463FCC792B59CE3A00017412 /* DataInitializatior.swift in Sources */,
+				4671E3A72B5DAF8E001C02FE /* EventWindow.swift in Sources */,
+				4668A07D2B5896D300ACE3D7 /* Event.swift in Sources */,
+				4671E3AA2B5DBA94001C02FE /* RealmExtension.swift in Sources */,
+				463FCC6B2B59A7E300017412 /* RealmStorageClient.swift in Sources */,
+				4671E3AC2B5DE5CB001C02FE /* Customs.swift in Sources */,
+				4671E3AE2B5E042C001C02FE /* EntryEventViewController.swift in Sources */,
+				463FCC6D2B59A7F600017412 /* Deserializer.swift in Sources */,
 				4668A00E2B5863B500ACE3D7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -353,7 +603,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -376,6 +626,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VALIDATE_PRODUCT = NO;
 			};
 			name = Debug;
 		};
@@ -416,7 +667,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -429,6 +680,7 @@
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
@@ -437,6 +689,7 @@
 		};
 		4668A0332B5863B600ACE3D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A6F751575A534F4740AAC5B /* Pods-DayPlanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -450,6 +703,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -465,6 +719,7 @@
 		};
 		4668A0342B5863B600ACE3D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DA56F9E38D3C3EFEC3DF5CF /* Pods-DayPlanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -478,6 +733,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -493,6 +749,7 @@
 		};
 		4668A0362B5863B600ACE3D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F36B3C41A4BF85E6B9F2040 /* Pods-DayPlannerTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -513,6 +770,7 @@
 		};
 		4668A0372B5863B600ACE3D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50C53905A5C79094522241BE /* Pods-DayPlannerTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -533,6 +791,7 @@
 		};
 		4668A0392B5863B600ACE3D7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6FC2676B37E2897CDB2BC274 /* Pods-DayPlannerUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -551,6 +810,7 @@
 		};
 		4668A03A2B5863B600ACE3D7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 714DBC41D864B9BAB487F98B /* Pods-DayPlannerUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

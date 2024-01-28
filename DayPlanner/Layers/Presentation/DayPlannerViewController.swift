@@ -1,43 +1,61 @@
+import CalendarKit
 import RealmSwift
 import UIKit
-import CalendarKit
 
+@available(iOS 13.0, *)
 class DayPlannerViewController: DayViewController {
+    var events = [EventWindow]()
+
+    private lazy var barButton = UIBarButtonItem(
+        barButtonSystemItem: .add,
+        target: self,
+        action: #selector(didTapAdd)
+    )
+
     override func viewDidLoad() {
         super.viewDidLoad()
-//        realm.beginWrite()
-//        realm.delete(realm.objects(EventRealm.self))
-//        try! realm.commitWrite()
-
         title = "Day Planner"
+        navigationItem.rightBarButtonItem = barButton
 
-        save()
+        saveData()
         render()
     }
 
-    func render() {
-//        let events = realm.objects(EventRealm.self)
-        // let event = DataBaseClient.getEventById(1)!
-        // let events = realm.objects(Event.self)
-
-      //  let event = DataBaseClient.getEventById(1)!
-
-       // let calendar = UICalendarView()
-
-        // for event in events {
-
-//        let label = UILabel(frame: view.bounds)
-//        label.text = "\(event.id) \n \(event.name) \n \(event.details)"
-//        label.textAlignment = .center
-//        label.numberOfLines = 0
-//        view.addSubview(label)
-
-        // }
+    override func eventsForDate(_ date: Date) -> [EventDescriptor] {
+        return events
     }
 
-    func save() {
-        DataInitializatior.initJsonInRealm(
-            pathToJson: "/Users/maladetska/simbirsoft/DayPlanner/ExampleData/events_data.json"
-        )
+    private func saveData() {
+        DataInitializatior.initJsonToRealmDB(projectRoot)
+    }
+
+    private func saveData(_ event: Event) {
+        DataInitializatior.addEventToRealmDB(event)
+    }
+
+    private func render() {
+        let allEvents = DataBaseClient.getAllEvents()
+
+        if !allEvents.isEmpty {
+            for event in allEvents {
+                events.append(EventWindow(event!))
+            }
+        }
+    }
+
+    // MARK: Unrealised
+
+    @available(iOS 13.0, *)
+    @IBAction func didTapAdd() {
+        let viewController = storyboard?
+            .instantiateViewController(identifier: "entry") as! EntryEventViewController
+        viewController.title = "New Event"
+        viewController.update = {
+            DispatchQueue.main.async {
+                self.saveData()
+            }
+        }
+
+        navigationController?.pushViewController(viewController, animated: true)
     }
 }
